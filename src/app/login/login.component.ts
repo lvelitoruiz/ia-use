@@ -21,6 +21,14 @@ export class LoginComponent implements OnInit {
       console.log(formData);
       this.authService.login(formData.value.email,formData.value.password);
     }
+  };
+
+  checkUser(): void {
+    this.authService.checkUser();
+  }
+
+  logOut(): void {
+    this.authService.logOut();
   }
 
 }
