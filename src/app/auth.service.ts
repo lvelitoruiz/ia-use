@@ -29,7 +29,6 @@ export class AuthService implements OnInit{
         photoURL: value.user?.photoURL,
         displayName: value.user?.displayName
       }
-
       localStorage.setItem('userData',JSON.stringify(this.user));
     })
     .catch(err => {

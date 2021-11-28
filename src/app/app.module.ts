@@ -11,13 +11,17 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from "@angular/fire/auth";
 import { FormsModule } from '@angular/forms';
 import { AuthService } from './auth.service';
+import { UserControlComponent } from './user-control/user-control.component';
+import { ArticleListComponent } from './article-list/article-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     ContentComponent,
-    ArticlesComponent
+    ArticlesComponent,
+    UserControlComponent,
+    ArticleListComponent
   ],
   imports: [
     BrowserModule,

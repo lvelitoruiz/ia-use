@@ -1,0 +1,7 @@
+<div *ngIf="user">
+    <div>
+        <img [src]="userData.photoURL" alt="" />
+    </div>
+    <p>{{ userData.displayName }}</p>
+    <input type="button" value="Logout" *ngIf="logOut()" />
+</div>
